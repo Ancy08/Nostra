@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collection page</title>
+    <!-- tailwindcdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- style Sheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Offer section -->
+    <section id="section1" class="bg-black p-5">
+        <div class="text-white justify-around flex md:text-2xl">
+            <h1>Sign Up and <b>GET 20% OFF</b> for your first Order</h1>
+            <p id="close" class="cursor-pointer">X</p>
+        </div>
+    </section>
+    <!-- Navbar section -->
+    <navbar class="justify-between flex p-4 bg-white shadow-lg z-10 md:text-xl top-0 items-center sticky">
+        <div>
+            <h1 class="text-3xl md:text-4xl md:font-extrabold">Nostra</h1>
+        </div>
+        <div id="menubar" class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 md:hidden   ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg></div>
+
+
+        <div class=" text-xs gap-3 md:text-xl md:gap-5 cursor-pointer hidden md:flex">
+            <a href="index.html">
+                <p class="hover:underline hover:text-gray-600">Home</p>
+            </a>
+            <p class="hover:underline hover:text-gray-600" id="newarrival">New Arrival</p>
+            <p class="hover:underline hover:text-gray-600">Most Wanted</p>
+            <a href="collection.html">
+                <p class="hover:underline hover:text-gray-600">Collections</p>
+            </a>
+            <a href="contact.html">
+                <p class="hover:underline hover:text-gray-600">Contact Us</p>
+            </a>
+
+        </div>
+    </navbar>
+    <!-- sidenavbar -->
+    <section id="sidenav" class=" fixed z-20 top-0 right-0 bg-blue-100 transition-all duration-1000 "
+        style="width: 50%; height: 100vh;right: -50%;">
+        <div id="closesidenav" class="text-right p-5">
+            <p class="cursor-pointer">X</p>
+        </div>
+        <div class="flex flex-col items-center gap-10">
+            <p class="hover:underline hover:text-gray-600">Home</p>
+            <p class="hover:underline hover:text-gray-600" id="newarrival">New Arrival</p>
+            <p class="hover:underline hover:text-gray-600">Most Wanted</p>
+            <a href="collection.html">
+                <p class="hover:underline hover:text-gray-600">Collections</p>
+            </a>
+            <a href="contact.html">
+                <p class="hover:underline hover:text-gray-600">Contact Us</p>
+            </a>
+
+        </div>
+    </section>
+    <!-- Whole section -->
+    <section class=" grid grid-cols-4 md:grid-cols-12 gap-4 w-full">
+        <div class="ml-2 gap-2 col-span-1 md:col-span-3 h-screen overflow-y-auto top-2 md:ml-10">
+            <div id="occasion">
+                <h1 class="text-xl md:text-2xl font-semibold">Occasion</h1>
+                <div><input type="checkbox" name="check" value="Summer">Summer</div>
+                <div><input type="checkbox" name="check" value="Party">Party</div>
+                <div><input type="checkbox" name="check" value="Beach">Beach</div>
+
+            </div>
+            <div id="colors">
+                <h1 class="text-xl md:text-2xl font-semibold">Colors</h1>
+                <div><input type="checkbox" name="check" value="Red">Red</div>
+                <div><input type="checkbox" name="check" value="Blue">Blue</div>
+                <div><input type="checkbox" name="check" value="Green">Green</div>
+            </div>
+            <div id="arrivals">
+                <h1 class="text-xl md:text-2xl font-semibold">Arrivals</h1>
+                <div><input type="checkbox" name="check" value="New">New</div>
+                <div><input type="checkbox" name="check" value="Old">Old</div>
+
+            </div>
+        </div>
+        <div class="p-5 md:p-10 mt-2 col-span-3 md:col-span-9">
+            <div id="collection" class="text-center mt-2  ">
+                <input id="search" type="text" class="border border-black rounded-lg  p-2 w-full">
+            </div>
+            <!-- Dress section -->
+            <section id="collection-list" class="items-center justify-center  gap-3 md:gap-10 mt-2 md:mt-4 grid grid-cols-2 md:grid-cols-4">
+                    <div><img src="./images/dress1.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Red Occasion Wear</h1>
+                        <p>$2500</p>
+                    </div>
+                    <div><img src="./images/dress3.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Green Occasion Wear</h1>
+                        <p>$3000</p>
+                    </div>
+                    <div><img src="./images/dress2.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Yellow Occasion Wear</h1>
+                        <p>$2000</p>
+                    </div>
+
+                    <div><img src="./images/dress4.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Red Summer Wear</h1>
+                        <p>$2200</p>
+                    </div>
+                    <div><img src="./images/dress5.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Green Summer Wear</h1>
+                        <p>$3000</p>
+                    </div>
+                    <div><img src="./images/dress6.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Yellow Summer Wear</h1>
+                        <p>$3250</p>
+                    </div>
+
+                    <div><img src="./images/dress7.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Red Party Wear</h1>
+                        <p>$2400</p>
+                    </div>
+                    <div><img src="./images/dress8.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Green Party Wear</h1>
+                        <p>$2500</p>
+                    </div>
+                    <div><img src="./images/dress4.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Yellow Party Wear</h1>
+                        <p>$3500</p>
+                    </div>
+
+
+                    <div><img src="./images/dress3.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Red Beach Wear</h1>
+                        <p>$2200</p>
+                    </div>
+                    <div><img src="./images/dress1.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Green Beach Wear</h1>
+                        <p>$1000</p>
+                    </div>
+                    <div><img src="./images/dress2.png" alt="dress1" class="w-48 rounded-lg">
+                        <h1>Yellow Beach Wear</h1>
+                        <p>$2500</p>
+                    </div>
+
+                  </div>
+    
+
+                </section>
+    </section>
+    <!-- footer Section -->
+    <section class="m-10 items-center justify-center top-0 flex flex-col">
+        <h1 class="text-2xl">Join Our news Letter</h1>
+        <p class="md:text-xl font-light text-sm mt-3">Signup for our email newspaper to get exclusive discounts, update
+            and more</p>
+        <input type="text" class="border border-black rounded-lg p-2 mt-3" style="width: 80%;">
+        <button
+            class="flex bg-black text-white mt-3 p-3 border border-transparent rounded w-35 h-10 items-center md:mt-4 gap-3 md:w-35 lg:w-40 lg:left-8 hover:text-black hover:bg-transparent hover:border-black">Subscribe
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2"
+                stroke="currentColor" class="w-7 h-7 flex-shrink-1 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+        </button>
+
+    </section>
+
+
+
+    <script src="collection.js"></script>
+
+</body>
+
+</html>
