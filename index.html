@@ -63,27 +63,29 @@
         </div>
     </section>
     <section id="container-main">
-        <div id="container" class="sale-image relative">
+        <div id="container" class="sale-image relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
             <button onclick="prevslide()" class=" carousel-button carousel-button__prev">&#8656;</button>
             <button onclick="nextslide()" class=" carousel-button carousel-button__next">&#8658;</button>
             <ul id="slider">
-                <li class="slide"><img src="./images/1.jpg" alt="Sale Image1"></li>
-                <li class="slide hidden"><img src="./images/2.jpg" alt="Sale Image1"></li>
-                <li class="slide hidden"><img src="./images/3.jpg" alt="Sale Image1"></li>
+                <li class="slide w-full h-full object-cover"><img src="./images/1.jpg" alt="Sale Image1"></li>
+                <li class="slide hidden w-full h-full object-cover"><img src="./images/2.jpg" alt="Sale Image1"></li>
+                <li class="slide hidden w-full h-full object-cover"><img src="./images/3.jpg" alt="Sale Image1"></li>
             </ul>
-        </div>
-        <div class="items-center absolute" id="sale-content">
-            <div class=" flex  inset-0 flex-col items-center md:top-12 ">
-            <h1 class="text-white text-bold text-2xl md:font-extrabold md:text-3xl lg:text-6xl">Level up your style with our</h1>
-            <p class="text-white mt-3 md:text-2xl lg:text-4xl">Summer Collections</p>
-            <button
-                class="flex bg-gray-300 text-black mt-3 p-3 border border-transparent rounded w-40 h-10 items-center gap-3 hover:bg-transparent hover:border-white hover:text-white">Shop
-                Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2"
+            <div class="absolute inset-0 flex flex-col items-center justify-center  
+                md:items-start md:text-left  mt-0 mb-9 md:pl-10 md:mb-12 md:mt-0" id="sale-content">
+                <div class="relative mb-10 flex flex-col items-center">
+                   <h1 class="text-white text-bold text-2xl md:font-extrabold md:text-3xl lg:text-6xl">Level up your style with our</h1>
+                      <p class="text-white mt-3 md:text-2xl lg:text-4xl">Summer Collections</p>
+                       <button
+                         class="flex bg-gray-300 text-black mt-3 p-3 border border-transparent rounded w-40 h-10 items-center gap-3 hover:bg-transparent hover:border-white hover:text-white">Shop
+                      Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2"
                     stroke="currentColor" class="w-7 h-7 flex-shrink-1 ">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                 </svg>
-            </button>
+               </button>
             </div>
+        </div>
+        
         </div>
 
     </section>
