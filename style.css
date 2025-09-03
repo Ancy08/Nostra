@@ -41,10 +41,10 @@
   border: solid black 1px;
 }
 .carousel-button__prev{
-  left: 1rem;
+  left: 2rem;
 }
 .carousel-button__next{
-  right: 1rem;
+  right: 2rem;
 }
 @media screen and (min-width: 1024px) {
   .sale-image img {
